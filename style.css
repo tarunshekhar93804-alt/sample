@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+header {
+  background: #0a4dbf;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1.4rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-text h1 span {
+  color: #f0644c;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.hero img {
+  width: 260px;
+}
+
+.section {
+  padding: 2rem 2rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.section p {
+  max-width: 900px;
+  line-height: 1.6rem;
+}
+
+.skills-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-box {
+  background: #0a4dbf;
+  color: white;
+  padding: 1.2rem;
+  width: 30%;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.project-box {
+  background: white;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.project-box h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.project-box p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.contact-form {
+  width: 350px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.7rem 0;
+  border: 1px solid #0a4dbf;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #0a4dbf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #083a8e;
+}
+
+footer {
+  background: #0a4dbf;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills-container {
+    flex-direction: column;
+  }
+  .skill-box {
+    width: 100%;
+  }
+}
