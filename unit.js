@@ -29,7 +29,7 @@ while(str[v]){
     if(str[v]==="5") break;
 console.log(str[v])
 v=v+1
-}*/
+}
 
 function print(){
     console.log("sample")
@@ -44,3 +44,50 @@ print()*/
 /*const print=function(){
     console.log("Watashiwa Indojin desu")
 }*/
+
+// console.log("Its the first line")
+// try{
+//     let age = 20;
+//     if (age<18){
+//         throw new Error("You are not eligible to drive")
+//     }
+//     let sample;
+//     for (let i=0;i<10;i++){
+//         sample=i
+//     }
+// }
+// catch(e){
+//     console.log(e)
+//     throw new Error("Something Went Wrong")
+
+// }finally{
+//     console.log("finally back")
+//   }
+// console.log("This is the last line")
+
+
+// async function getData() {
+//     try{
+//         const response=await fetch("https://dummyjson.com/products")
+//         const data=await response.json()
+//         console.log(response.ok)
+//         if(!response.ok){
+//             throw new Error("Somehting went wrong")
+//         }
+//         data.products.forEach((products)=>{
+//             console.log(products.titlt)
+//         })
+//     }
+
+//     catch(e){
+//     console.log(e)
+// }
+    
+// }
+// getData()
+
+
+
+
+
+

@@ -58,20 +58,54 @@ button.addEventListener('click',()=>{
 
     */
 
-function doHomework(){
-    const p=new Promise((res,rej)=>{
-        setTimeout(()=>{
-            let done = true
-            if (done){
-                console.log("Homework Complete");
-                res("Homework done")
-            }
-            else{
-                rej("Homework not done");
-            }
-        },2000)
-        });
+// function doHomework(){
+//     const p=new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             let done = true
+//             if (done){
+//                 console.log("Homework Complete");
+//                 res("Homework done")
+//             }
+//             else{
+//                 rej("Homework not done");
+//             }
+//         },2000)
+//         });
     
-    return p;
-}
+//     return p;
+// }
 
+// let obj={
+//     name:"Yash",
+//     age:24
+// }
+
+// localStorage.setItem("obj", JSON.stringify(obj))
+
+// localStorage.setItem("name","Yash")
+// localStorage.setItem("age",24)
+
+// console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("age"))
+
+// console.log(JSON.parse(localStorage.getItem("obj")))
+// localStorage.removeItem("age")
+// localStorage.clear()//clear everything
+
+
+//  sessionStorage.setItem("name","Tarun")
+//  sessionStorage.setItem("age",20 )
+
+//  console.log(sessionStorage.getItem("name"))
+//  console.log(sessionStorage.getItem("age"))
+
+//  sessionStorage.removeItem("age" )
+
+document.cookie="name=Ankit; expires=Fri,20 Feb 2026 23:59:59 UTC;"
+document.cookie="age=32; expires=Fri,20 Feb 2026 23:59:59 UTC;"
+
+async function sample() {
+    await fetch("http://127.0.0.1:5500/index.html")
+    
+}
+sample()
